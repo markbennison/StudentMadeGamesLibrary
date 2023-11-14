@@ -1,0 +1,6 @@
+Game controls:
+a to mode left
+d to move right
+left mouse to shoot
+
+objective:Dont hit any obstacles or the wall will advance, once the wall hits you, its game over

@@ -1,0 +1,19 @@
+GitHub Link:
+https://github.com/bh95ox/Fast_proto1
+
+Game Rules
+Follow complete All the goals for the door to open and dont get killed or touch the Lava or you will die.
+Once all the goal has been completed the player can then open the door by colliding against it. 
+To pick up the Keys just walk over then and it should dissapear that means it has been collected.
+Have fun.
+
+Game Controls
+
+Move right: Keyboard = D
+	    Console  = Left Stick/Right
+Move Left : Keyboard = A
+	    Console  = Left Stick/Left
+Jump 	  : Keyboard = Spacebar
+	    Console  = Button South
+Shoot     : Mouse    = Left Click
+	  : Console  = Right Trigger

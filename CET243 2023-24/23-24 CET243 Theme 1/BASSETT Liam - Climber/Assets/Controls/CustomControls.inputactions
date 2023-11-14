@@ -1,0 +1,134 @@
+{
+    "name": "CustomControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "90041b90-17f4-4ac9-a2f4-4001b59b34ee",
+            "actions": [
+                {
+                    "name": "ArmL",
+                    "type": "Value",
+                    "id": "e541ca63-f002-42f8-9bc8-9bd60b9c713e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ArmR",
+                    "type": "Value",
+                    "id": "9cc7c947-e7b1-4a46-bfe2-6db0c6ba5f27",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HoldL",
+                    "type": "Button",
+                    "id": "dda30978-b815-405d-9c19-b44249e7e72c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HoldR",
+                    "type": "Button",
+                    "id": "f54af416-f8b9-49dd-903a-58bf06c037e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FlexR",
+                    "type": "Button",
+                    "id": "2f08c6b0-4edc-423a-8125-657c37dfc483",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=0.1)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FlexL",
+                    "type": "Button",
+                    "id": "c0227124-0829-4278-b299-a40880bd3287",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=0.1)",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c9a6cbc0-4be8-4c02-973d-1809acb9c560",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone,InvertVector2",
+                    "groups": "",
+                    "action": "ArmL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58385c95-2466-4763-8b8f-3ee90ea542d8",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone,InvertVector2",
+                    "groups": "",
+                    "action": "ArmR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e790588-7dc6-43f6-bd1c-34f8858167f6",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HoldL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78fcedc3-4d5e-4683-ae4b-b3860334440c",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HoldR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0182a9ff-06e5-493b-9d52-e0000af737d6",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FlexR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c753aefc-a43f-4f2e-b7c3-cd42d225a6e6",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FlexL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
