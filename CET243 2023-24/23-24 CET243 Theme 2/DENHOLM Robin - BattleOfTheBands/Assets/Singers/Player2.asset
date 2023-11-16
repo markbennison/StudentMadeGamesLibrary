@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b714c9d4f00e44b9683a2db05d461e, type: 3}
+  m_Name: Player2
+  m_EditorClassIdentifier: 
+  singerName: Kiera
+  singerType: 0
+  moves:
+  - {fileID: 11400000, guid: bc879560954e7b747863f426cecb887d, type: 2}
+  - {fileID: 11400000, guid: 257e0e75e74a2de4e809ee1cedcddd5c, type: 2}
+  - {fileID: 11400000, guid: 7244790068c03cf4f88ee9ef3eb04563, type: 2}
