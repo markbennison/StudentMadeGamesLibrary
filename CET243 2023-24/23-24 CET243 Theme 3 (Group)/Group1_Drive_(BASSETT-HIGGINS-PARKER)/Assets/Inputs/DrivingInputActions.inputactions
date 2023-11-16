@@ -1,0 +1,287 @@
+{
+    "name": "DrivingInputActions",
+    "maps": [
+        {
+            "name": "Driving",
+            "id": "b653e2c5-1ca2-41a0-af59-c0f7440bc1f2",
+            "actions": [
+                {
+                    "name": "Acceleration",
+                    "type": "Value",
+                    "id": "ea9c95c4-beff-46c7-adac-eb5c11c1e1c5",
+                    "expectedControlType": "Analog",
+                    "processors": "Normalize(max=1),AxisDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HandBrake",
+                    "type": "Value",
+                    "id": "c9b01664-ee37-4b48-a771-4d9c576765c0",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SteeringAngle",
+                    "type": "Value",
+                    "id": "a5af9680-f296-4caf-81e2-a2f2c416fc2b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CameraSwitch",
+                    "type": "Button",
+                    "id": "8953b568-4213-47e8-b130-1919d81f3aee",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f97ad5ec-113a-4cd0-8ccb-20b83c82cae3",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "HandBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1e809da-f397-43af-8adc-09cd0a985367",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "HandBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae35fd72-6118-4ba4-8b42-058bf407d0a1",
+                    "path": "<Joystick>/stick/y",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1,zero=-1)",
+                    "groups": "",
+                    "action": "HandBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d7a71c3-cf87-4304-acac-f55e68c04bd4",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Acceleration",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c592f3c1-9594-4498-bf6e-2aadea4b1079",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Acceleration",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d35e2d4f-4277-4c44-a702-638fd4c226eb",
+                    "path": "<Joystick>/rz",
+                    "interactions": "",
+                    "processors": "Invert,Normalize(min=-1,max=1,zero=-1)",
+                    "groups": "",
+                    "action": "Acceleration",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Key AD",
+                    "id": "97395245-b00e-406d-9b8f-26eefdfbd875",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SteeringAngle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f7d64d42-3e97-4d5a-8b9d-872561508d2b",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "82973d7f-db45-4cb7-ada3-abe9d9101d1f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Key ArrL ArrR",
+                    "id": "44f7e997-98ab-4122-976e-3fdce1ac14c4",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SteeringAngle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "63db39c6-a311-4dcf-8060-3c9d8128b863",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5dbc92a0-2340-426c-85ed-b217773e9d35",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "AnalogLeft",
+                    "id": "f1ad02da-54de-4086-8aa2-8a177c1e1110",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SteeringAngle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0454e026-2f6f-4778-a658-4861801c7500",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5c4840a5-d200-4687-a7d8-448909ccec67",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5dd87864-38a4-4d7a-800b-e2d14df450b8",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SteeringAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ccb3cd64-b31e-4a9f-8c29-2072dc08bc1e",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "CameraSwitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "887ecfd2-6def-4a20-8446-7e68f766e4b8",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "CameraSwitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46e69fe9-3b19-474e-9688-79665599ccf7",
+                    "path": "<HID::44F B684>/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraSwitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "WheelPedal",
+            "bindingGroup": "WheelPedal",
+            "devices": []
+        }
+    ]
+}
